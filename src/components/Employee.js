@@ -1,7 +1,12 @@
 import React from 'react'
 
-export const Employee = () => {
+export const Employee = (props) => {
   return (
-    <div>Employee</div>
+    <div>
+        Employee Details
+        <h3>Welcome {props.name}</h3>
+        <h3> Employee ID: {props.id}</h3>
+    </div>
+
   )
 }
