@@ -8,6 +8,10 @@ export const Employee = (props) => {
     }
     const [count,setCount]=useState(0);
 
+    const [employees]=useState(
+        ["Gaurab","Saurab","Ram","Shyam"]
+    )
+
     function increment(){
         setCount(count + 1);
     }
@@ -25,6 +29,11 @@ export const Employee = (props) => {
     <div>
         Employee Details
         <h3>Welcome {props.name}</h3>
+       <ul>
+        {employees.map((employee,index)=>(
+            <li key={index}>{employee}</li>
+        ))}
+       </ul>
         <h3> Employee ID: {props.id}</h3>
         <button onClick={increment}>+</button>
         <span>Count: {count}</span>
