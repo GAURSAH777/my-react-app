@@ -1,6 +1,11 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 
 export const Employee = (props) => {
+    Employee.propTypes={
+        name: PropTypes.string,
+        id: PropTypes.number
+    }
   return (
     <div>
         Employee Details
