@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <h1>Welcome To my APP</h1>
-      <Employee name="Gaurab" id={777}/>
+      <Employee name="Gaurab" id={777} count={0}/>
     </div>
   );
 }
