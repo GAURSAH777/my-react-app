@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 export const Employee = (props) => {
     Employee.propTypes={
-        name: PropTypes.string,
-        id: PropTypes.number
+        name: PropTypes.string.isRequired,
+        id: PropTypes.number.isRequired
     }
   return (
     <div>
